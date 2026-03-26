@@ -1,0 +1,10 @@
+version: "3"
+services:
+db:
+  image: postgres:11-alpine
+  enviroment:
+    POSTGRES_USER: fitarena
+    POSTGRES_PASSWORD: fitarena
+    POSTGRES_DB: fitarena
+  ports:
+    - "5432:5432"
